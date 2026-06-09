@@ -1,0 +1,51 @@
+id,meal_name,calories,protein_g,carbs_g,fat_g,logged_at,input_tokens,output_tokens,total_tokens,fiber_g,time
+14,"Chana Masala (Chickpea Curry), Basmati Rice with Fried Onions, Side Salad (Cucumber, Tomato, Red Onion, Lettuce)",535,17.5,88.0,12.2,"2026-06-09 08:07:40.766926",390,319,709,11.5,8.634
+15,"Fried Fish, Steamed White Rice, Vegetable Curry (Potato/Vegetable), Beetroot Thoran, Spiced Lentil/Pulse Side, Cucumber Raita/Yogurt Salad",775,43.0,93.0,24.0,"2026-06-09 08:08:47.032296",390,539,929,6.8,3.373
+16,"Steamed white basmati rice, Yellow lentil dal (tadka), Okra stir-fry with peanuts (Bhindi Masala)",565,18.0,88.0,15.9,"2026-06-09 08:18:22.610919",380,325,705,10.3,15.122
+17,"Steamed white basmati rice, Yellow lentil dal (tadka), Okra stir-fry with peanuts (Bhindi Masala)",565,18.0,88.0,15.9,"2026-06-09 08:21:48.231138",380,325,705,10.3,4.461
+18,"Dal (lentil soup), Bhindi Masala (okra stir-fry), Peas Pulao (rice with peas and tomatoes), Roti (whole wheat flatbread)",600,17.5,92.0,17.5,"2026-06-09 08:56:14.708184",390,419,809,12.5,4.214
+19,"Vegetable Pulao (Rice with carrots and broccoli), Aloo Gobi (Spiced potato and cauliflower stir-fry), Zucchini and vegetable masala",575,11.5,94.0,18.0,"2026-06-09 08:56:45.140425",390,327,717,10.0,3.502
+20,"Peas Pulao, Methi Thepla, Dal Tadka, Aloo Matar Curry, Kadhi, Stuffed Vegetable Pakora, Sweets (Laddu and Rasgulla)",1040,26.0,142.0,41.0,"2026-06-09 09:01:44.223313",384,681,1065,15.0,3.999
+21,"Steamed Basmati Rice, Yellow Dal (Lentil Soup), Fried Okra (Bhindi Fry), Fried Meat/Vegetable Fritters (Pakora), Mashed Potato/Vegetable Bharta, Sautéed Green Vegetable Mash",650,18.7,89.0,24.5,"2026-06-09 09:05:00.438942",390,599,989,9.6,20.369
+22,"Dosa (fermented rice and lentil crepe), Potato Masala (Aloo Bhaji), Red Tomato Chutney, Green Coconut Chutney",375,8.0,51.0,16.0,"2026-06-09 09:05:39.780963",390,411,801,6.0,3.477
+23,"Steamed White Rice, Dal Tadka (Lentil Soup), Aloo Fry (Potato Stir-fry), Curd (Plain Yogurt)",655,20.0,110.5,14.5,"2026-06-09 09:06:23.531418",388,411,799,8.0,3.897
+24,"Chana Masala (Chickpea Curry), Kulcha (Leavened Flatbread)",680,24.0,105.0,18.0,"2026-06-09 09:08:33.281386",388,232,620,14.0,2.876
+25,"Vegetable Poha with Peanuts, Mango Lassi",500,12.5,77.0,15.5,"2026-06-09 09:09:50.687667",390,223,613,5.5,3.657
+26,"Paniyaram (savory rice and lentil dumplings), Green chutney (cilantro and mint), Mandarin oranges",500,13.2,69.0,20.8,"2026-06-09 09:10:27.553711",390,313,703,8.2,3.951
+27,"Avocado, cubed, Yellow bell pepper, raw, Puffed lotus seeds (Makhana), Mixed seeds (flax, sesame, pumpkin), Pesto sauce, Pecans",707,15.2,40.5,56.9,"2026-06-09 09:11:09.331324",388,590,978,17.8,5.566
+28,"Steamed white rice, Onion omelet, Green bean stir-fry (sabzi), Papadum",440,16.5,56.0,16.4,"2026-06-09 09:14:40.792827",379,401,780,3.6,4.033
+29,"Chicken Biryani with Potato, Papadum (Fried), Masala Chai (Milk Tea), Onion and Cucumber Salad",710,28.0,90.5,25.1,"2026-06-09 09:16:01.915492",390,405,795,5.3,11.169
+30,"Steamed white rice, Chicken curry (bone-in pieces with gravy)",705,38.5,79.0,24.5,"2026-06-09 09:16:59.846408",390,226,616,2.5,5.421
+31,"Steamed Egg Custard (Chawanmushi style)",135,9.0,3.0,9.5,"2026-06-09 09:18:03.122559",388,134,522,0.0,2.906
+32,"Uttapam (fermented rice and lentil pancake), Vegetable topping (tomatoes, onions, green chilies), Cooking oil (applied to surface)",323,6.3,43.5,14.2,"2026-06-09 09:20:27.450150",380,324,704,3.7,15.647
+33,"Chicken pieces in spicy curry sauce",680,65.0,12.0,42.0,"2026-06-09 09:21:23.764985",388,132,520,3.5,2.575
+34,"Mutton Curry (Goat meat cooked in onion, tomato, and spice gravy)",720,65.0,12.0,45.0,"2026-06-09 09:22:09.523861",388,142,530,3.0,2.68
+35,"Firm tofu, pan-seared with pesto, Sautéed green bell peppers, Sautéed carrots, Sautéed mushrooms, Creamy herb dressing",450,26.3,21.1,29.5,"2026-06-09 09:23:07.468830",379,494,873,6.0,6.105
+36,"Steamed White Rice, Spicy Potato Curry (Aloo Curry)",535,9.5,96.0,11.5,"2026-06-09 09:25:21.338605",390,225,615,4.5,3.385
+37,"Burger King Whopper with Cheese, Burger King Whopper with Cheese, Burger King French Fries (Medium), Burger King French Fries (Medium), Coca-Cola (Medium)",2450,74.0,258.0,126.0,"2026-06-09 09:26:51.982657",379,462,841,12.0,6.979
+38,"Mango rose tart topping (fresh sliced mango), Tart crust (buttery pastry base), Cream filling (pastry cream/mascarpone)",1840,23.3,207.5,105.4,"2026-06-09 09:27:51.987660",390,330,720,8.6,5.145
+39,"Mango rose tart topping (fresh sliced mango), Tart crust (buttery pastry base), Cream filling (pastry cream/mascarpone)",1840,23.3,207.5,105.4,"2026-06-09 09:37:03.362945",390,330,720,8.6,4.564
+40,"Steamed White Rice, Dal Tadka (Lentil Soup), Aloo Sabzi (Potato Stir-fry), Plain Yogurt (Curd)",660,20.5,115.0,12.5,"2026-06-09 09:40:30.466551",429,411,840,9.5,2.949
+41,"Fried Fish, Steamed White Rice, Vegetable Curry and Gravy, Side Dishes (Beetroot, Lentils, Raita)",865,45.0,104.0,27.5,"2026-06-09 09:40:49.791483",431,374,805,8.0,4.27
+42,"Pan-seared firm tofu, Sautéed mixed vegetables (bell peppers, carrots, mushrooms), Creamy herb dressing",400,27.5,16.5,26.0,"2026-06-09 09:41:51.268003",420,321,741,5.0,11.79
+43,"Tofu and Vegetable Stir-fry (Tofu, Green Bell Pepper, Carrots, Mushrooms), Creamy Herb Dressing",400,23.0,18.0,26.0,"2026-06-09 09:43:44.653417",504,236,740,6.0,2.819
+44,"Uttapam (fermented rice and lentil pancake), Vegetable topping (tomatoes, onions, green chilies), Cooking oil (applied to surface)",333,7.3,43.5,14.7,"2026-06-09 09:47:37.483503",505,324,829,4.2,9.935
+45,"Uttapam (fermented rice and lentil pancake), Tomato and vegetable topping (sautéed)",255,7.5,45.0,5.5,"2026-06-09 09:50:48.570891",531,224,755,4.0,7.018
+46,"Uttapam (fermented rice and lentil pancake), Tomato and vegetable topping (sautéed), Cooking oil (absorbed)",333,7.5,45.0,14.5,"2026-06-09 09:52:46.279103",555,318,873,4.0,14.321
+47,"Uttapam (fermented rice and lentil pancake), Tomato and vegetable topping (sautéed), Cooking oil (residual)",260,5.5,39.0,9.0,"2026-06-09 09:59:08.527661",559,298,857,3.5,3.374
+48,"Uttapam (fermented rice and lentil pancake), Vegetable topping (tomato, onion, green chili)",240,7.0,39.0,6.0,"2026-06-09 10:04:02.027455",581,202,783,3.0,7.612
+49,"Uttapam (fermented rice and lentil pancake), Vegetable topping (tomato, onion, green chili)",240,7.0,39.0,6.0,"2026-06-09 10:04:11.672180",581,202,783,3.0,2.064
+50,"Uttapam (fermented rice and lentil pancake), Tomato and green chili topping",200,5.0,34.0,5.0,"2026-06-09 10:08:10.525768",581,197,778,3.0,1.833
+51,"Stir-fried tofu and mixed vegetables (bell peppers, mushrooms, carrots), Creamy herb dressing",330,19.0,14.0,22.0,"2026-06-09 10:10:00.461637",580,205,785,4.0,2.793
+52,"Tofu and Vegetable Stir-fry (Tofu, Bell Peppers, Mushrooms, Carrots), Creamy Herb Dressing",400,23.0,17.0,26.0,"2026-06-09 10:10:25.024551",580,207,787,6.0,2.395
+53,"Tofu and Vegetable Stir-fry (Tofu, Bell Peppers, Mushrooms, Carrots), Creamy Herb Dressing",400,23.0,17.0,26.0,"2026-06-09 10:10:33.844786",580,207,787,6.0,2.005
+54,"Tofu and Vegetable Stir-fry (Tofu, Bell Peppers, Mushrooms, Carrots), Creamy Herb Dressing",400,23.0,17.0,26.0,"2026-06-09 10:10:38.426658",580,207,787,6.0,1.598
+55,"Steamed White Rice, Chicken Curry",675,37.0,78.0,23.0,"2026-06-09 10:11:04.073097",591,191,782,3.0,14.223
+56,"Steamed White Rice, Chicken Curry",675,37.0,78.0,23.0,"2026-06-09 10:11:07.431027",591,191,782,3.0,1.835
+57,"Steamed White Rice, Chicken Curry",610,40.0,64.0,21.0,"2026-06-09 10:15:07.789571",604,191,795,3.0,6.213
+58,"Steamed White Rice, Chicken Curry",610,40.0,64.0,21.0,"2026-06-09 10:15:13.830218",604,191,795,3.0,2.085
+59,"Steamed White Rice, Chicken Curry",610,40.0,64.0,21.0,"2026-06-09 10:15:22.960802",604,191,795,3.0,5.395
+60,"Steamed White Rice, Chicken Curry",610,40.0,64.0,21.0,"2026-06-09 10:15:24.794274",604,191,795,3.0,1.882
+61,"Laptop Computer",0,0.0,0.0,0.0,"2026-06-09 10:38:13.590651",604,107,711,0.0,2.348
+62,"Orbit chewing gum",30,0.0,20.0,0.0,"2026-06-09 10:43:38.664979",604,110,714,0.0,2.24
+63,"Sugarfree Chewing Gum",15,0.0,8.0,0.0,"2026-06-09 10:44:20.012279",604,111,715,0.0,1.89
