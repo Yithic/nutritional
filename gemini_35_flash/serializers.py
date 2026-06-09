@@ -8,10 +8,10 @@ class FoodItemSchema(BaseModel):
     name: str = Field(description="Name of the individual food element")
     estimated_weight_grams: float = Field(description="Estimated weight of the item in grams")
     calories: int = Field(description="Caloric content in kcal")
-    protein_g: float = Field(description="Protein content in grams")
-    carbs_g: float = Field(description="Total carbohydrate content in grams")
-    fat_g: float = Field(description="Total fat content in grams")
-    fiber_g: float = Field(description="Total fiber content in grams")
+    protg: float = Field(description="Protein content in grams")
+    carbsg: float = Field(description="Total carbohydrate content in grams")
+    fatg: float = Field(description="Total fat content in grams")
+    fiberg: float = Field(description="Total fiber content in grams")
 
 
 class NutritionAnalysisSchema(BaseModel):

@@ -64,8 +64,10 @@ Rules:
 - Strictly follow the JSON schema.
 - "total_calories" must be the exact sum of the items array.
 - "confidence_score" (0.0 to 1.0) reflects visual clarity.
-- Never refuse to estimate."""
-            )
+- Never refuse to estimate.
+- Maximize efficiency: Ignore insignificant garnishes or minor sauces under 10 grams, or consolidate them into the main component to keep the "items" list under 4-5 entries max.
+- CRITICAL EFFICIENCY RULE: If the image is a heavily mixed bowl (like a salad with many seeds, nuts, and chopped veggies), DO NOT list every ingredient separately. Consolidate the meal into a maximum of 2 or 3 logical groups (e.g., "Mixed Seed & Avocado Salad Base", "Roasted Foxnuts", "Green Sauce") and estimate the combined macros for those groups.
+- SPATIAL RULE: If plate scale is ambiguous, instantly assume standard Indian portion sizes (e.g., 1 Katori/bowl = ~150g, 1 standard Roti = ~40g). Do not overthink scale."""            )
             
             if user_description:
                 prompt += (
@@ -106,10 +108,10 @@ CRITICAL: Revise your baseline visual estimates using this context. Adjust macro
                         names.append(name)
                         
                     # Extract macros dynamically supporting both naming conventions
-                    total_protein += float(item.get("protein_g") or item.get("proteinG") or 0)
-                    total_carbs += float(item.get("carbs_g") or item.get("carbsG") or 0)
-                    total_fat += float(item.get("fat_g") or item.get("fatG") or 0)
-                    total_fibre += float(item.get("fiber_g") or item.get("fiberG") or 0)
+                    total_protein += float(item.get("protg") or item.get("protG") or 0)
+                    total_carbs += float(item.get("carbsg") or item.get("carbsG") or 0)
+                    total_fat += float(item.get("fatg") or item.get("fatG") or 0)
+                    total_fibre += float(item.get("fiberg") or item.get("fiberG") or 0)
 
 
                 # Combine item names into a single string for your flat DB entry
