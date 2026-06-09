@@ -36,6 +36,7 @@ class AnalyzeMealView(APIView):
             # 1. Read binary content and transform it into a PIL Image object
             image_bytes = file_obj.read()
             image = Image.open(io.BytesIO(image_bytes))
+
             
             # Safe defensive color mode conversion for any format (PNG, WebP, etc.)
             if image.mode != "RGB":
@@ -50,6 +51,16 @@ class AnalyzeMealView(APIView):
             # Scale perfectly to match Gemini's token grid thresholds
             max_ratio = (768, 768)
             image.thumbnail(max_ratio)
+            # After your image.thumbnail(max_ratio) step:
+            output_buffer = io.BytesIO()
+# Force compression into a tiny JPEG
+            image.save(output_buffer, format="JPEG", quality=90) 
+
+# Create an explicitly compressed Part object
+            compressed_image_part = types.Part.from_bytes(
+    data=output_buffer.getvalue(),
+    mime_type="image/jpeg"
+)
 
             # 2. Define clear system context for execution
             prompt = (
@@ -67,7 +78,9 @@ Rules:
 - Never refuse to estimate.
 - Maximize efficiency: Ignore insignificant garnishes or minor sauces under 10 grams, or consolidate them into the main component to keep the "items" list under 4-5 entries max.
 - CRITICAL EFFICIENCY RULE: If the image is a heavily mixed bowl (like a salad with many seeds, nuts, and chopped veggies), DO NOT list every ingredient separately. Consolidate the meal into a maximum of 2 or 3 logical groups (e.g., "Mixed Seed & Avocado Salad Base", "Roasted Foxnuts", "Green Sauce") and estimate the combined macros for those groups.
-- SPATIAL RULE: If plate scale is ambiguous, instantly assume standard Indian portion sizes (e.g., 1 Katori/bowl = ~150g, 1 standard Roti = ~40g). Do not overthink scale."""            )
+- SPATIAL RULE: If plate scale is ambiguous, instantly assume standard Indian portion sizes (e.g., 1 Katori/bowl = ~150g, 1 standard Roti = ~40g). Do not overthink scale.
+- Use whole numbers ONLY. Round all weights and macros to the nearest integer. Do not use decimals.
+-Keep the food item names strictly under 3 words."""            )
             
             if user_description:
                 prompt += (
@@ -78,7 +91,7 @@ CRITICAL: Revise your baseline visual estimates using this context. Adjust macro
             # 3. Call Gemini Flash with structured requirements
             response = client.models.generate_content(
                 model="gemini-3.1-flash-lite",
-                contents=[image, prompt],
+                contents=[compressed_image_part, prompt],
                 config=types.GenerateContentConfig(
                     temperature=0.0,
                     response_mime_type="application/json",
