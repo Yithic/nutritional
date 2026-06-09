@@ -39,9 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'gemini_35_flash',
-    'gemini_35_flash_sam',
-    'nateraw',
-    'rajistics'
 
 ]
 

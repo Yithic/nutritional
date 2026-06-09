@@ -3,9 +3,6 @@ from typing import List
 from rest_framework import serializers
 
 
-class MicroNutrientSchema(BaseModel):
-    nutrient_name: str = Field(description="The name of the micro or vitamin (e.g., Sodium, Vitamin C)")
-    amount: str = Field(description="The value with unit string (e.g., 200mg, 15mcg)")
 
 class FoodItemSchema(BaseModel):
     name: str = Field(description="Name of the individual food element")
@@ -15,9 +12,6 @@ class FoodItemSchema(BaseModel):
     carbs_g: float = Field(description="Total carbohydrate content in grams")
     fat_g: float = Field(description="Total fat content in grams")
     fiber_g: float = Field(description="Total fiber content in grams")
-    micronutrients: List[MicroNutrientSchema] = Field(
-        description="A dynamic list of key-value tracking pairs for elements not covered in standard macros."
-    )
 
 
 class NutritionAnalysisSchema(BaseModel):
@@ -35,7 +29,7 @@ class FoodItemSerializer(serializers.Serializer):
     carbs_g = serializers.FloatField()
     fat_g = serializers.FloatField()
     fiber_g = serializers.FloatField()
-    micronutrients = serializers.ListField()
+    
 
 
 class NutritionAnalysisSerializer(serializers.Serializer):
