@@ -37,6 +37,7 @@ class AnalyzeMealView(APIView):
             image_bytes = file_obj.read()
             image = Image.open(io.BytesIO(image_bytes))
 
+
             
             # Safe defensive color mode conversion for any format (PNG, WebP, etc.)
             if image.mode != "RGB":
@@ -61,6 +62,7 @@ class AnalyzeMealView(APIView):
     data=output_buffer.getvalue(),
     mime_type="image/jpeg"
 )
+            image.save('output.jpeg')
 
             # 2. Define clear system context for execution
             prompt = (
@@ -158,7 +160,11 @@ CRITICAL: Revise your baseline visual estimates using this context. Adjust macro
                     "status": "success",
                     "message": f"Logged {saved_meal.meal_name} successfully!",
                     "tokens_used": tot_tokens,
-                    "raw_analysis": meal_data
+                    "raw_analysis": meal_data,
+                    "input_tokens" : in_tokens,
+                    "output_tokens":out_tokens,
+                    "time_taken": duration,
+                    "raw_analysis":meal_data
                 }, status=status.HTTP_201_CREATED)
 
             except (json.JSONDecodeError, ValueError) as e:
