@@ -62,7 +62,6 @@ class AnalyzeMealView(APIView):
     data=output_buffer.getvalue(),
     mime_type="image/jpeg"
 )
-            image.save('output.jpeg')
 
             # 2. Define clear system context for execution
             prompt = (
@@ -87,7 +86,11 @@ Rules:
             if user_description:
                 prompt += (
                     f'''User Context: {user_description}
-CRITICAL: Revise your baseline visual estimates using this context. Adjust macros for hidden ingredients (e.g., butter/oil), update portion scales if mentioned, and modify cooking methods accordingly. Apply all adjustments at the individual item level.'''
+CRITICAL CONFLICT RESOLUTION RULES FOR USER CONTEXT:
+1. SUPPLEMENT, DO NOT REPLACE: Use this user context ONLY to refine hidden, invisible details (e.g., if the user mentions hidden butter, oil, specific milk types, or protein powders) or to resolve genuinely ambiguous items.
+2. VISUAL TRUTH OVER TEXT: If the user context directly contradicts the undeniable visual evidence in the image (e.g., the user writes "Chicken Salad" but the image clearly shows "Paneer Kathi Roll", or writes "Keto Meal" but the plate is full of Rice and Naan), you MUST TRUST THE IMAGE.
+3. NO HALLUCINATION: Do not force-fit or warp the visual elements to match a clearly incorrect text description. Analyze what is physically on the plate, ignore the incorrect text context, and prioritize visual reality to ensure accurate nutritional tracking.
+4. If the user uploads a non food item set all the macros to 0 and do not hallucinate non food as food.'''
                 )
 
             # 3. Call Gemini Flash with structured requirements
